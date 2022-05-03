@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C Amazon</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg  navbar-dark bg-colour fixed-top">
+	  <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1651415331/amacon_cbenqq.png" class="logo"/></a>
+	  <a href="#"><div class=" d-flex flex-row justify-content-center mr-3">
+	  	<div class="locat ">
+	  	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#f9fbfe" class="bi bi-geo-alt" viewBox="0 0 16 16">
+		  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+		  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+		</svg></div>
+		<div >
+			<p style="color: white;font-size: 13px;margin-right: 100px;">Hello <br><span style="color: white;">Select Your Address</span></p>
+			
+		</div>
+	  </div></a>
+	  <form class="form-inline  ">
+	      <input class="form-control bato " type="search" placeholder="Search" aria-label="Search">
+				      <button class="buto" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#febd69" class="bi bi-search" viewBox="0 0 16 16">
+			  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+			</svg></button>
+	    </form>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+					        <a class="nav-link " href="#" id="colour">Hello, Sign In<br>Accounts & Lists <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+				  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+				</svg><span class="sr-only">(current)</span></a>
+					      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" style="color:#ffffff;font-size: 12px;margin-right: 5px;">Returns <br>& Order</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Language
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color:#ffffff;font-size: 14px;margin-right: 5px;">
+	          <a class="dropdown-item" href="#" style="color:#000;font-size: 14px;margin-right: 5px;">Hindi</a>
+	          <a class="dropdown-item" href="#" style="color:#000;font-size: 14px;margin-right: 5px;">Telugu</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#" style="color:#000;font-size: 14px;margin-right: 5px;">Find More</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	      	<a href=""><p style="color:#ffffff;font-size: 14px; margin-left: 5px; margin-right: 10px;">Cart
+	      	<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" class="bi bi-cart" viewBox="0 0 16 16">
+			  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+			</svg></p></a>
+	      </li>
+	    </ul>
+	    
+	  </div>
+
+	</nav>
+	<div class="top-ipl d-flex flex-row">
+		<div class="">
+			<button class="ipl-name">Home</button><button class="ipl-name">Best Mobiles</button><button class="ipl-name">Best Sellers</button><button class="ipl-name">Customers service</button><button class="ipl-name">Deals Today</button><button class="ipl-name">Fashion </button><button class="ipl-name">Electronics</button><button class="ipl-name">Kitchen</button><button class="ipl-name">Amazon Prime</button><button class="ipl-name">New Releases</button><button class="ipl-name">Computers</button>
+		</div>
+	</div>
+	<div class="corou-co mt-1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 d-flex flex-column justify-content-center">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1651602636/ama_ctqerk.png" class="d-block w-100 ima" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1651602634/ama-2_mv9b25.png" class="d-block w-100 ima" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1651602633/ama-1_rnfoc1.png" class="d-block w-100 ima" alt="...">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="deals-container pt-2 pb-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-3">
+                 <div class="text-center content-1">
+                 	<p class="deal-1">Pay Credit Card & PostPaid Bills | Pay Now</p>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/Postpaid_186x116._SY116_CB646259375_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">PostPaid Bill</p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/CCBP_186x116._SY116_CB646259375_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Credit Card Bill</p>
+                 		</div></a>
+                 	</div>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/GPRC_186x116._SY116_CB646259375_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Google Play Recharge </p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/PCrevised/Subscriptions_186x116._SY116_CB628894454_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Pay For Subsciptions</p>
+                 		</div></a>
+                	 </div>
+                	 <a href="new.html"><h1 class="rips">Explore more from C-amazon Pay </h1></a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                    <div class="content-1">
+                        <h1 class="deal-1 ">Big Savings For Everyone</h1>
+                        <a href="new.html"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/MayART22/T2/Desktop_Gateway_CC_758x6081x_eng._SY304_CB622769446_.jpg" class="imagee w-100" />
+                        <h1 class="rips">See All Upcoming Offers </h1></a>
+                    </div>
+                </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                 <div class="text-center content-1">
+                 	<p class="deal-1">Top picks for your home</p>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" class=" w-100"/>
+                 			<p class="bill-1">AC's</p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" class="w-100"/>
+                 			<p class="bill-1">Refrigerator</p>
+                 		</div></a>
+                 	</div>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" class=" w-100"/>
+                 			<p class="bill-1">Microwaves </p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" class="w-100"/>
+                 			<p class="bill-1">Washing Machines</p>
+                 		</div></a>
+                	 </div>
+                	 <a href="new.html"><h1 class="rips mt-4">See More</h1></a>
+                </div>
+            </div>
+            	<div class="col-6 col-md-3 col-lg-3">
+                    <div class="content-1">
+                        <h1 class="deal-1 ">Sign in securely</h1>
+                        <a href="new.html"><img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg" class="imagee w-100" />
+                        <h1 class="rips">See All Laptops Offers </h1></a>
+                    </div>
+               	</div>
+        	</div>
+    	</div>
+	</div>
+	</div>
+	<div class="deals-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-3">
+                 <div class="text-center content-1">
+                 	<p class="deal-1">Upgrade Your Home | Amazon Brands & More</p>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/TV_1x._SY116_CB627443840_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Smart TV's</p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Appliances_1x._SY116_CB627444559_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Appliances</p>
+                 		</div></a>
+                 	</div>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Furn_1x._SY116_CB627275939_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Furniture </p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Kitchen_1x._SY116_CB627276315_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Kitchen Products</p>
+                 		</div></a>
+                	 </div>
+                	 <a href="new.html"><h1 class="rips">Explore more from C-amazon Pay </h1></a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                 <div class="text-center content-1">
+                 	<p class="deal-1">Home Summer Needs | Essentials</p>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2022/BAU/GW/1x_bedsheets._SY116_CB623248720_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Cotton Bedsheets</p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2022/BAU/GW/1x_emergencylight._SY116_CB623248720_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Emergency Lights</p>
+                 		</div></a>
+                 	</div>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2022/BAU/GW/1x_towels._SY116_CB623248720_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Towels</p>
+                 		</div></a>
+                 		<a href="new.html"><div class="content-2">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2022/BAU/GW/1x_bucket._SY116_CB623248720_.jpg" class="imager w-100"/>
+                 			<p class="bill-1">Bathroom Accessories</p>
+                 		</div></a>
+                	 </div>
+                	 <a href="new.html"><h1 class="rips">Explore more from C-amazon Pay </h1></a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                 <div class="text-center content-1">
+                 	<p class="deal-1">Shop By Category</p>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Fresh._SY116_CB431401553_.jpg" class=" w-100"/>
+                 			<p class="bill-1">Fresh</p>
+                 		</a></div>
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Mobile._SY116_CB431401553_.jpg" class="w-100"/>
+                 			<p class="bill-1">Mobiles</p>
+                 		</a></div>
+                 	</div>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Fashion._SY116_CB431401553_.jpg" class=" w-100"/>
+                 			<p class="bill-1">Fashion</p>
+                 		</a></div>
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY116_CB431401553_.jpg" class="w-100"/>
+                 			<p class="bill-1">Electronics</p>
+                 		</a></div>
+                	 </div>
+                	 <a href="new.html"><h1 class="rips mt-4">See More</h1></a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                 <div class="text-center content-1">
+                 	<p class="deal-1">Amazon Pay | Pay utility bills fast & conveniently</p>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/Electricity_186x116._SY116_CB646259375_.jpg" class=" w-100"/>
+                 			<p class="bill-1">Electricity Bill</p>
+                 		</a></div>
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/LPG_186x116._SY116_CB646259375_.jpg" class="w-100"/>
+                 			<p class="bill-1">LPG Gas Cylinder</p>
+                 		</a></div>
+                 	</div>
+                 	<div class="d-flex flex-row justify-content-center">
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/Broadband_186x116._SY116_CB646259375_.jpg" class=" w-100"/>
+                 			<p class="bill-1">Broadband Bill</p>
+                 		</a></div>
+                 		<div class="content-2"><a href="new.html">
+                 			<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Kartik/FEBGTM/PCrevised/DTH_186x116._SY116_CB628894454_.jpg" class="w-100"/>
+                 			<p class="bill-1">DTH Recharge</p>
+                 		</a></div>
+                	 </div>
+	                	 <a href="new.html"><h1 class="ripse ">See More</h1></a>
+                </div>
+            </div>
+         </div>   	
+    	</div>
+	</div>
+	</div>
+	<div class="deals-container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-12 mt-3">
+					<div class="content-3">
+					<h1 class="deal-2">Frequently repurchased in Supplies</h1>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71hP1JEHDFL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/51DGcy8eBCL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/61ocesEh0cL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/81im8ZLf2lL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/61Krpl7FGyL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71jhtTqFAFL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-12 mt-3">
+					<div class="content-3">
+					<h1 class="deal-2 ">Summer Sale | Starts 4th May <a href=""><span class="rips ml-3">Explore All Offers & Deals</span></a></h1>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="conter"><a href="#">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/MayART22/T1/MayART_PC_Shoveler_400x400BBD1xnew._CB622551729_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/MayART22/T1/MayART_PC_Shoveler_400x400DEALS1x._CB622552341_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/MayART22/T1/MayART_PC_Shoveler_400x400coupons1x._CB622291946_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/MayART22/T1/MayART_PC_Shoveler_400x400combos1x._CB622291946_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG22/Alexa/MayART/Kiosk/PC/MayArt22_GW_KioskPC_01_200X200_D43361901._CB622096420_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Gateway/200x200._CB622554748_.jpg" class="w-100"/>
+						</a></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a href="#"><img src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg"
+					class="home-fur w-100 mt-2 mb-3"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 col-md-3 ">
+					<div class="radhe-container">
+						<h1 class="radhe-header">For the Perfect Birthday Celebration</h1>
+						<div class="d-flex flex-row justify-content-center">
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/BirthdayStore/GW/Artboard_1QC1_1x._SY116_CB663432337_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Gifts By Interest</p>
+							</div></a>
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_4QC1_1x._SY116_CB663023402_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Decoration</p>
+							</div></a>
+						</div>
+						<div class="d-flex flex-row justify-content-center">
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_3QC1_1x._SY116_CB663023402_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Gift Cards</p>
+							</div></a>
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/BirthdayStore/GW/Artboard_2QC1_1x._SY116_CB663432337_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Most Gifted</p>
+							</div></a>
+						</div>
+						<a href=""><p class="radhe-exs">See More</p></a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="radhe-container">
+						<h1 class="radhe-header">Topmost collections to make your wedding special</h1>
+						<div class="mt-3">
+							<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Wedding-Store/btf/rev2/PC_CC-11x._SY304_CB653473418_.jpg" class="wed w-100">
+						</div>
+						<a href=""><p class="radhe-ex">See More</p></a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="radhe-container">
+						<h1 class="radhe-header">Join Prime to enjoy benefits</h1>
+						<div class="d-flex flex-row justify-content-center">
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/March/desktop/gaming_186x116._SY116_CB432709799_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Gaming with Prime</p>
+							</div></a>
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/March/desktop/186x116_1_final._SY116_CB435609147_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Prime Video</p>
+							</div></a>
+						</div>
+						<div class="d-flex flex-row justify-content-center">
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/March/desktop/186x116_2_final._SY116_CB435609146_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Prime Music</p>
+							</div></a>
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/March/desktop/186x116_4_final._SY116_CB435609146_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">Delivery</p>
+							</div></a>
+						</div>
+						<a href=""><p class="radhe-ex">Join Now, Cancel Anytime</p></a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="radhe-container">
+						<h1 class="radhe-header">Shop for your baby by age</h1>
+						<div class="d-flex flex-row justify-content-center">
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/0-6_months._SY116_CB667649399_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">0-6 Months</p>
+							</div></a>
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/6-12_months._SY116_CB667649399_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">6-12 Months</p>
+							</div></a>
+						</div>
+						<div class="d-flex flex-row justify-content-center">
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/12-18_months._SY116_CB667649399_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">12-18 Months</p>
+							</div></a>
+							<div class="radhes">
+								<a href=""><div>
+									<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/18-24_months._SY116_CB667649399_.jpg" class="w-100"/>
+								</div>
+								<p class="radhe-para">18-24 Months</p>
+							</div></a>
+						</div>
+						<a href=""><p class="radhe-ex">See More</p></a>
+					</div>
+				</div>	
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="content-3">
+					<h1 class="deal-2">Frequently repurchased in Supplies</h1>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/616Ve7sl72S._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71ITZ68mxdL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/31X8-JOM1rS._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/519p72yMH0L._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/711hqrqVjvL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/61PUTIFogcL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="content-3 mt-4">
+					<h1 class="deal-2">Best Sellers in Books</h1>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71g2ednj0JL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71sBtM3Yi5L._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/818e+fq7+BL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/81l3rZK4lnL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/710jnzKlDTL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/61fp0RQR+9L._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/81lmGXLmjuL._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+						<div class="conter"><a href="#">
+							<img src="https://m.media-amazon.com/images/I/71sBtM3Yi5L._AC_SY200_.jpg" class="w-100"/>
+						</a></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid ">
+		<div class="row">
+			<div class="col-6 col-md-3 mb-3">
+				<div class="special">
+					<h1 class="special-head">Keep Shopping For</h1>
+						<div class="text-center">
+						<img src="https://m.media-amazon.com/images/I/810vmBDwfeL._AC_SY175_.jpg"
+						 class="specials"/>
+						</div>
+					<p class="special-para">Shalimar Premium OXO - Biodegradable Garbage Bags 17 X 19 Inches (Small) 120 Bags (4 rolls) Dus…</p>
+					<p class="special-paras">₹216.00<span class="special-head-1">₹250.00</span></p>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/810vmBDwfeL._AC_SY55_.jpg" class="w-100 mini-image"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71d5GOTCLkL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71wP28-cozL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/816xqGSxJQL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="special">
+					<h1 class="special-head">Keep Shopping For</h1>
+						<div class="text-center">
+						<img src="https://m.media-amazon.com/images/I/71vxvDPBpPL._AC_SY175_.jpg"
+						 class="specials"/>
+						</div>
+					<p class="special-para">Amazon Brand - Presto! Oxo-Biodegradable Garbage Bags, Small - 30 bags/roll (Pack of 6)...</p>
+					<p class="special-paras">₹275.00<span class="special-head-1">₹320.00</span></p>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71vxvDPBpPL._AC_SY55_.jpg" class="w-100 mini-image"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71TM0929mgL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71TM0929mgL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71RD0k-PenL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="special">
+					<h1 class="special-head">Keep Shopping Where You Left</h1>
+						<div class="text-center">
+						<img src="https://m.media-amazon.com/images/I/71q7meZ82qL._AC_SY175_.jpg"
+						 class="specials "/>
+						</div>
+					<p class="special-para">USHA Armor AR1100WB 1100 W Dry Iron with Black Weilburger Soleplate (Purple)...</p>
+					<p class="special-paras">₹525.00<span class="special-head-1">₹950.00</span></p>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71q7meZ82qL._AC_SY55_.jpg" class="w-100 mini-image"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/61S+GSuRHkL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/51GE7eUZP8L._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/51+7ivjXnzL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="special">
+					<h1 class="special-head">Keep Shopping For</h1>
+						<div class="text-center">
+						<img src="https://m.media-amazon.com/images/I/713RF8VADrL._AC_SY175_.jpg"
+						 class="specials"/>
+						</div>
+					<p class="special-para">Shalimar Premium OXO - Biodegradable Garbage Bags 17 X 19 Inches (Small) 120 Bags (4 rolls) Dus…</p>
+					<p class="special-paras">₹216.00<span class="special-head-1">₹250.00</span></p>
+					<div class="d-flex flex-row justify-content-center">
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71TM0929mgL._AC_SY55_.jpg" class="w-100 mini-image"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/810vmBDwfeL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/51GE7eUZP8L._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+						<div class="mini-box">
+							<img src="https://m.media-amazon.com/images/I/71vxvDPBpPL._AC_SY55_.jpg" class="w-100 mini-images"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12"><hr class="hr-line"/></div>
+			<div class="col-6 col-md-2">
+				<div class="last-ra">
+
+				
+					<a href=""><div class="image">
+						<img src="https://images-eu.ssl-images-amazon.com/images/I/61PvVgBV20L._AC_UL160_SR160,160_.jpg" class="w-100"/>
+					</div></a>
+					<div class="last-ru">
+						<a href=""><p class="last-para">Lifelong LLMGEK03 Mixer Grinder 500 W (2 Jar, Black) with Electric Kettle 1.5 Litre 1500W for Boiling Water, Soup (Silver) Su...</p></a>
+						<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1650824392/reviews_nz61ga.png" class=" last-1"/>
+							<p class="last-infos">Deal OF the Day</p>
+							<p class="last-info">₹1,699.00</p>
+							<p class="last-infoe">₹4,000 </p><span style="color: black;">(58% off)</span>
+							<p class="last-info">Get it <span style="font-weight: bold;">by Saturday, May 7</span></p>
+							<p class="last-info">FREE Delivery over ₹499.</p>
+							<p class="last-info">Fulfilled by Amazon.</p>
+							<p class="last-info" style="color: green;">Ends in 4 days </p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-6 col-md-2">
+				<div class="last-ra">
+
+				
+					<a href=""><div class="image">
+						<img src="https://images-eu.ssl-images-amazon.com/images/I/611auLEDU-L._AC_UL160_SR160,160_.jpg" class="w-100"/>
+					</div></a>
+					<div class="last-ru">
+						<a href=""><p class="last-para">OPR Stainless Steel Plain Pedal Dustbin with Lid | Trash Can for Bathroom, Home, Kitchen, washrooms, Room and Office with Lid</p></a>
+						<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1650824392/reviews_nz61ga.png" class=" last-1"/>
+							<p class="last-infos">Deal OF the Day</p>
+							<p class="last-info">₹1,499.00</p>
+							<p class="last-infoe">₹2,000 </p><span style="color: black;">(58% off)</span>
+							<p class="last-info">Get it <span style="font-weight: bold;">by Saturday, May 7</span></p>
+							<p class="last-info">FREE Delivery over ₹499.</p>
+							<p class="last-info">Fulfilled by Amazon.</p>
+							<p class="last-info" style="color: green;">Ends in 4 days </p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-6 col-md-2">
+				<div class="last-ra">
+
+				
+					<a href=""><div class="image">
+						<img src="https://images-eu.ssl-images-amazon.com/images/I/8157jOYKajS._AC_UL160_SR160,160_.jpg" class="w-100"/>
+					</div></a>
+					<div class="last-ru">
+						<a href=""><p class="last-para">Fruitri Irani Pistachios Nut, Roasted and Salted, 100% Pure Natural Organic Pista, 1kg</p></a>
+						<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1650824392/reviews_nz61ga.png" class=" last-1"/>
+							<p class="last-infos">Deal OF the Day</p>
+							<p class="last-info">₹1,189.00</p>
+							<p class="last-infoe">₹2,099 </p><span style="color: black;">(58% off)</span>
+							<p class="last-info">Get it <span style="font-weight: bold;">by Saturday, May 7</span></p>
+							<p class="last-info">FREE Delivery over ₹499.</p>
+							<p class="last-info">Fulfilled by Amazon.</p>
+							<p class="last-info" style="color: green;">Ends in 4 days </p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-6 col-md-2">
+				<div class="last-ra">
+
+				
+					<a href=""><div class="image">
+						<img src="https://images-eu.ssl-images-amazon.com/images/I/61DAkNxj9uL._AC_UL160_SR160,160_.jpg" class="w-100"/>
+					</div></a>
+					<div class="last-ru">
+						<a href=""><p class="last-para">Pigeon by Stovekraft Cruise 1800 watt Induction Cooktop (Black)</p></a>
+						<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1650824392/reviews_nz61ga.png" class=" last-1"/>
+							<p class="last-infos">Deal OF the Day</p>
+							<p class="last-info">₹1,499.00</p>
+							<p class="last-infoe">₹3,299 </p><span style="color: black;">(58% off)</span>
+							<p class="last-info">Get it <span style="font-weight: bold;">by Saturday, May 7</span></p>
+							<p class="last-info">FREE Delivery over ₹499.</p>
+							<p class="last-info">Fulfilled by Amazon.</p>
+							<p class="last-info" style="color: green;">Ends in 4 days </p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-6 col-md-2">
+				<div class="last-ra">
+
+				
+					<a href=""><div class="image">
+						<img src="https://images-eu.ssl-images-amazon.com/images/I/41jO9VMPFlL._AC_UL160_SR160,160_.jpg" class="w-100"/>
+					</div></a>
+					<div class="last-ru">
+						<a href=""><p class="last-para">Kuber Industries Plastic Open Dustbin, Garbage Bin For Home, Kitchen, Office, 5Ltr. (Black)-47KM01029</p></a>
+						<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1650824392/reviews_nz61ga.png" class=" last-1"/>
+							<p class="last-infos">Deal OF the Day</p>
+							<p class="last-info">₹129.00</p>
+							<p class="last-infoe">₹250.00 </p><span style="color: black;">(58% off)</span>
+							<p class="last-info">Get it <span style="font-weight: bold;">by Saturday, May 7</span></p>
+							<p class="last-info">FREE Delivery over ₹499.</p>
+							<p class="last-info">Fulfilled by Amazon.</p>
+							<p class="last-info" style="color: green;">Ends in 4 days </p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-6 col-md-2">
+				<div class="last-ra">
+
+				
+					<a href=""><div class="image">
+						<img src="https://images-eu.ssl-images-amazon.com/images/I/5121NNZG-tS._AC_UL160_SR160,160_.jpg" class="w-100"/>
+					</div></a>
+					<div class="last-ru">
+						<a href=""><p class="last-para">Scotch-Brite Bathroom Squeegee Plastic Wiper(30 cm)(Green)
+							</p></a>
+						<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1650824392/reviews_nz61ga.png" class=" last-1"/>
+							<p class="last-infos">Deal OF the Day</p>
+							<p class="last-info">₹349.00</p>
+							<p class="last-infoe">₹425.00 </p><span style="color: black;">(19% off)</span>
+							<p class="last-info">Get it <span style="font-weight: bold;">by Saturday, May 7</span></p>
+							<p class="last-info">FREE Delivery over ₹499.</p>
+							<p class="last-info">Fulfilled by Amazon.</p>
+							<p class="last-info" style="color: green;">Ends in 4 days </p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-12"><hr class="hr-line"/></div>
+			<div class="col-12 text-center">
+				<div class="">
+					<p style="margin: 0px; color: #1D1D1F;margin-top: 10px; margin-bottom: 5px;">See Personalized recommendations</p>
+					<button class="sign-button">Sign In</button>
+					<p>New Customer <a href=""><span style="color: #007185 ;">Start Here</span></a></p>
+				</div>
+			</div>
+			<div class="col-12"><hr class="hr-lines"/></div>
+		</div>
+
+	</div>
+	
+</div>
+	<a href=""><div class="back-content d-flex flex-column">
+		<button class="back-to">Back To Top</button>
+	</div></a>
+	<div class="info-cont">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class=" col-6 col-md-3 col-lg-3">
+					<div class="infr">
+	                    <h1 class="head-6 ">Get to know us </h1>
+	                    <a href="" class="ilu"><p class="parr">About us</p></a>
+	                    <a href="" class="ilu"><p class="parr">Career</p></a>
+	                    <a href="" class="ilu"><p class="parr">Press Release</p></a>
+	                    <a href="" class="ilu"><p class="parr">Gift a Smile</p></a>
+	                    <a href="" class="ilu"><p class="parr">c-Amazon Cares</p></a>
+	                    <a href="" class="ilu"><p class="parr">c-Amazon service</p></a>
+	                    <a href="" class="ilu"><p class="parr">Referrals</p></a>
+	                </div>
+	            	</div>
+	                <div class=" col-6 col-md-3 col-lg-3">
+	                	<div class="infr">
+	                    <h1 class="head-6 ">Contact with us</h1>
+	                    <a href="" class="ilu"><p class="parr">Facebook</p></a>
+	                    <a href="" class="ilu"><p class="parr">Twitter</p></a>
+	                    <a href="" class="ilu"><p class="parr">Instagram</p></a>
+	                </div></div>
+	                <div class=" col-6 col-md-3 col-lg-3">
+	                	<div class="infr">
+	                    <h1 class="head-6 ">Make money with us</h1>
+	                    <a href="" class="ilu"><p class="parr">Sell On C-amazon</p></a>
+	                    <a href="" class="ilu"><p class="parr">Sell on Amazon Accelerator</p></a>
+	                    <a href="" class="ilu"><p class="parr">Become an Affiliate</p></a>
+	                    <a href="" class="ilu"><p class="parr">Fulfilment by amazon</p></a>
+	                    <a href="" class="ilu"><p class="parr">Advertise your Products</p></a>
+	                    <a href="" class="ilu"><p class="parr">Amazon Pay</p></a>
+	                    <a href="" class="ilu"><p class="parr">Merchants</p></a>
+	                    <a href="" class="ilu"><p class="parr">Global selling</p></a>
+	                </div>
+	            </div>
+	                <div class=" col-6 col-md-3 col-lg-3">
+	                	<div class="infr">
+	                    <h1 class="head-6 ">Let Us Help You</h1>
+	                    <a class="ilu" href=""><p class="parr">100% Purchase Protection</p>
+	                    <a class="ilu" href=""><p class="parr">Your Account</p></a>
+	                    <a class="ilu" href=""><p class="parr">Return Center</p></a>
+	                    <a class="ilu" href=""><p class="parr">Amazon App Development</p></a>
+	                    <a class="ilu" href=""><p class="parr">Assistant</p></a>
+	                    <a class="ilu" href=""><p class="parr">Help</p></a>
+	                </div></div>
+
+
+
+				</div>
+			</div>
+			<div class="col-12"><hr class="hr-liner"/></div>
+			<div class="col-12 col-md-12 p-2">
+				<div class="content-6  text-center">
+				<div class=" d-flex flex-row justify-content-center">
+					<img src="https://res.cloudinary.com/dan9pf3bw/image/upload/v1651527713/neam_jievkj.png" class=" imaged"/>
+					<div class="conters">
+					
+	        <a class="nav-link dropdown-toggle" href="#" id="colour-change" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+				  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+				</svg>  Language
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color:#ffffff;font-size: 14px;margin-right: 5px;">
+	          <a class="dropdown-item" href="#" style="color:#000;font-size: 14px;margin-right: 5px;">Hindi</a>
+	          <a class="dropdown-item" href="#" style="color:#000;font-size: 14px;margin-right: 5px;">Telugu</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#" style="color:#000;font-size: 14px;margin-right: 5px;">Find More</a>
+	        </div>
+			</div>
+				</div>
+				</div>
+			
+	</div></a></div>
+	<div class="bg-last pb-3 pt-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Abe Books <span style="color: #999999;"><br>Books, Arts &<br>Collections..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Amazon Web Services <span style="color: #999999;"><br>Scalable &<br>Cloud
+					Computing Services..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Audible <span style="color: #999999;"><br>Download &<br>Audio Books..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">DPReview <span style="color: #999999;"><br>Digital &<br>Photography..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">IMDB<span style="color: #999999;"><br>Movies,TV &<br>Celebrities..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Shopbop <span style="color: #999999;"><br>Fashion &<br>Designers..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Amazon Business <span style="color: #999999;"><br>Everything for your   &<br>Business.</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Prime Now <span style="color: #999999;"><br>2 Hours Delivery<br>Everyday..</span></p>
+				</div>
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">	Amazon Prime Music<span style="color: #999999;"><br>90 million songs, ad-free<br>Over 15 million podcast episodes..</span></p>
+				</div>
+				v
+				<div class="col-3 col-md-2 mt-2">
+					<p class="ade">Abe Books <span style="color: #999999;"><br>Books, Arts &<br>Collections..</span></p>
+				</div>
+				
+				<hr>
+
+				<div class="col-12 mt-4">
+					<div class="d-flex flex-row justify-content-center">
+						<div>
+							<p class="ade p-2">Conditions of use & sale</p>
+
+						</div>
+						<div><p class="ade p-2">Privacy Notes</p></div>
+						<div><p class="ade p-2">Internet based Ads</p></div>
+						<div><p class="ade p-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+</svg> 1996-2022, Amazon.com, Inc. or its affiliates</p></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
